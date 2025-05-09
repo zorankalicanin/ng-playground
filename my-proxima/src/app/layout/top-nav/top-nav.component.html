@@ -1,0 +1,15 @@
+<nav class="top-nav">
+    <div class="logo">
+        <a routerLink="/">My Proxima</a>
+    </div>
+    <div class="global-search">
+        <input type="text" 
+            placeholder="Search..."
+            [(ngModel)]="searchQuery"
+            (keydown.enter)="onSearch()"
+        >
+        <button (click)="onSearch()">
+            Search 
+        </button>
+    </div>
+</nav>  

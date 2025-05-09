@@ -1,0 +1,15 @@
+<aside class="sidebar">
+  <nav class="sidebar-nav">
+    <ul>
+      <li *ngFor="let item of navItems">
+        <a 
+          [routerLink]="item.path" 
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: item.path === '/home'}"
+        >
+          <span class="label">{{item.label}}</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>
