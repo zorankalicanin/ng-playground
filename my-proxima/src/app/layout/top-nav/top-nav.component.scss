@@ -1,0 +1,58 @@
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  
+  .logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+  }
+  
+  .global-search {
+    display: flex;
+    flex: 1;
+    max-width: 500px;
+    margin: 0 2rem;
+    
+    input {
+      flex: 1;
+      padding: 0.5rem;
+      border: 1px solid #ced4da;
+      border-radius: 4px 0 0 4px;
+    }
+    
+    button {
+      padding: 0.5rem 1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+  }
+  
+  .nav-actions {
+    display: flex;
+    gap: 0.5rem;
+    
+    button {
+      padding: 0.5rem 1rem;
+      background-color: transparent;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: #e9ecef;
+      }
+    }
+  }
+}
